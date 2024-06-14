@@ -1,3 +1,9 @@
 
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ãä´Üùÿÿÿÿ8®µÇÕý1J$c4c1b684-3e9e-4a41-bf5f-d282be4af93d
 ˜
-java:S1450"URemove the "images" field and declare it as a local variable in the relevant methods.(îè‡Ø8›Ú‰Õý1J$6cdf3704-f377-4b2d-aee6-c7da8fae9dc2
+java:S1450"URemove the "images" field and declare it as a local variable in the relevant methods.(îè‡Ø8¯µÇÕý1J$0930ab26-2473-41b6-828e-4951928a7a5a
+~	java:S125&"<This block of commented-out lines of code should be removed.(êÉá8ä¬ÉÕý1J$d9ace4e1-0d5f-4c57-94e6-8737d533c5ea
+z
+java:S1128"7Remove this unused import 'javafx.scene.input.KeyCode'.(ûÊ¢¶8ç¬ÉÕý1J$3e420570-c5a5-481d-a579-dac10167b2aa
+€
+java:S1128"8Remove this unused import 'javafx.scene.input.KeyEvent'.(¦¶ Æøÿÿÿÿ8ç¬ÉÕý1J$a58070ec-d9b6-48e7-8168-0053f73e015a
