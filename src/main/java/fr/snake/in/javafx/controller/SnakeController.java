@@ -9,7 +9,7 @@ import javafx.scene.layout.GridPane;
 
 public class SnakeController{
 
-    private static final int GridSize = 15;
+    private static final int GRIDSIZE = 15;
 
     @FXML
     private GridPane gridBackground;
@@ -20,19 +20,34 @@ public class SnakeController{
     private Scene scene;
 
     private ImageView[][] images;
+    private ImageView[][] positionsPlayer;
 
     @FXML
     public void initialize() {
-        images = new ImageView[GridSize][GridSize];
-        for (int i = 0; i < GridSize; i++) {
-            for (int j = 0; j < GridSize; j++) {
-                images[i][j] = new ImageView("D:/snakeMadeInJavaFx/snake/src/main/resources/fr/snake/in/javafx/view/images/Carré_vert_foncé.jpg");
-                images[i][j].setFitHeight(2);
-                images[i][j].setFitWidth(2);
-                gridBackground.add(images[i][j], i, j);
+        images = new ImageView[GRIDSIZE][GRIDSIZE];
+        positionsPlayer = new ImageView[GRIDSIZE][GRIDSIZE];
+        for (int i = 0; i < GRIDSIZE; i++) {
+            for (int j = 0; j < GRIDSIZE; j++) {
+                ImageView imageView;
+                if ((i + j) % 2 == 0) {
+                    imageView = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/Carré_vert_foncé.jpg").toExternalForm());
+                } else {
+                    imageView = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/images.png").toExternalForm());
+                }
+                imageView.setFitHeight(50);
+                imageView.setFitWidth(50);
+                images[i][j] = imageView;
+                gridBackground.add(imageView, i, j);
             }
         }
+        positionsPlayer[0][0] = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/player.jpg").toExternalForm());
+        positionsPlayer[0][0].setFitHeight(50);
+        positionsPlayer[0][0].setFitWidth(50);
+        gridFront.add(positionsPlayer[0][0], GRIDSIZE/2, GRIDSIZE/2);
     }
+
+
+
 
     /*
     public void setScene(Scene scene) {
