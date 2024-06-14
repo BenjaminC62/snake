@@ -14,14 +14,6 @@ public class SnakeController{
     private static final int GRIDSIZE = 15;
     private int positionPlayerInArray = GRIDSIZE/2;
 
-    //Images
-    private final ImageView fondVertLight= new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/Carré_vert_foncé.jpg").toExternalForm());
-    private final ImageView fondVertDark= new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/images.png").toExternalForm());
-    private final ImageView PlayerImage = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/player.jpg").toExternalForm());
-    private final ImageView foodImage = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/pomme.png").toExternalForm());
-    private final ImageView transparentImage = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/transparent.png").toExternalForm());
-    
-
     @FXML
     private GridPane gridBackground;
 
@@ -37,17 +29,23 @@ public class SnakeController{
         this.scene = scene;
         scene.addEventFilter(KeyEvent.KEY_PRESSED, e ->{
             if(e.getCode() == KeyCode.RIGHT){
-                if(positionPlayerInArray != 15){
-                    positionPlayerInArray++;
-                    positionsPlayer[positionPlayerInArray][GRIDSIZE/2].setImage(positionPlayerInArray);
+                
+                gridFront.getChildren().remove(positionsPlayer[positionPlayerInArray][GRIDSIZE/2]);
+
+                positionsPlayer[positionPlayerInArray][GRIDSIZE/2] = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/transparent.png").toExternalForm());
+                positionsPlayer[positionPlayerInArray][GRIDSIZE/2].setFitHeight(50);
+                positionsPlayer[positionPlayerInArray][GRIDSIZE/2].setFitWidth(50);
+                gridFront.add(positionsPlayer[positionPlayerInArray][GRIDSIZE/2], positionPlayerInArray, GRIDSIZE/2);
+
+                positionPlayerInArray++;
+
+                if(positionPlayerInArray == GRIDSIZE){
+                    positionPlayerInArray = 0;
+                }else{
+                    positionsPlayer[positionPlayerInArray][GRIDSIZE/2] = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/player.jpg").toExternalForm());
                     positionsPlayer[positionPlayerInArray][GRIDSIZE/2].setFitHeight(50);
                     positionsPlayer[positionPlayerInArray][GRIDSIZE/2].setFitWidth(50);
-                    gridFront.add(positionsPlayer[positionPlayerInArray][GRIDSIZE/2], positionPlayerInArray--, GRIDSIZE/2);
-                    positionsPlayer[positionPlayerInArray--][(GRIDSIZE/2)] = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/transparent.png").toExternalForm());
-                    gridFront.add(positionsPlayer[positionPlayerInArray--][GRIDSIZE/2], positionPlayerInArray--, GRIDSIZE/2);
-                }
-                else{
-                    positionPlayerInArray = 0;
+                    gridFront.add(positionsPlayer[positionPlayerInArray][GRIDSIZE/2], positionPlayerInArray, GRIDSIZE/2);
                 }
             }
         });
@@ -102,7 +100,7 @@ public class SnakeController{
         }while (pomme1 == pomme2);
 
 
-        images[pomme1][pomme1].setImage(foodImage.getImage());
+        images[pomme1][pomme1] = new ImageView(getClass().getResource("/fr/snake/in/javafx/view/images/pomme.png").toExternalForm());
         images[pomme1][pomme1].setFitHeight(50);
         images[pomme1][pomme1].setFitWidth(50);
         gridBackground.add(images[pomme1][pomme1], pomme1, pomme1);
