@@ -1,10 +1,18 @@
 
-˜
-java:S1450"URemove the "images" field and declare it as a local variable in the relevant methods.(îè‡Ø8Î¦õÁ2J$abe4c574-f1af-4894-a35c-a644c17708e9
-¦
-java:S1450"^Remove the "positionsPlayer" field and declare it as a local variable in the relevant methods.(¼†ğœûÿÿÿÿ8Ï¦õÁ2J$42d57d38-e04f-4b7b-b2a0-a53d1a198593
-~	java:S1255"<This block of commented-out lines of code should be removed.(êÉá8Õ¦õÁ2J$f64b595d-6a52-4834-ad31-ca570c5b7ae5
-z
-java:S1128"7Remove this unused import 'javafx.scene.input.KeyCode'.(ûÊ¢¶8Ö¦õÁ2J$035f5934-a8ef-4bc5-a6c4-2f356d701ab3
-€
-java:S1128"8Remove this unused import 'javafx.scene.input.KeyEvent'.(¦¶ Æøÿÿÿÿ8×¦õÁ2J$f9732e3c-1d25-442c-bd02-a2d72733389f
+³
+java:S1192"pDefine a constant instead of duplicating this literal "/fr/snake/in/javafx/view/images/transparent.png" 3 times.(‹óâî8¤¿ÒÃ2J$97e7b0f0-946a-4470-a722-f79c8e7840af
+	java:S116"VRename this field "PlayerImage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë›²ÿÿÿÿÿ8ÀÒÃ2J$0a225c36-8423-40b1-a3a9-81518e47dd6d
+Ã
+java:S1186["€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(àèİ%8ÀÒÃ2J$da868e94-1993-4aaf-89c7-642c0370b501
+—
+java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(÷‘éÑ8ÀÒÃ2J$17d0b407-043b-4e0b-a0f8-39377815cc19
+f
+java:S2119`"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8œÀÒÃ2J$afd93353-c537-40a3-8a1c-3388f77543ca
+N
+java:S1068"1Remove this unused "fondVertLight" private field.(¢æç8šÔÃ2
+L
+java:S1068"0Remove this unused "fondVertDark" private field.(”¸ÅB8šÔÃ2
+Q
+java:S1068"/Remove this unused "PlayerImage" private field.(ë›²ÿÿÿÿÿ8šÔÃ2
+Q
+java:S1068"4Remove this unused "transparentImage" private field.(‹óâî8›ÔÃ2

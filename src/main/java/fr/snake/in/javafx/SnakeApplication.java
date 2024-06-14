@@ -1,5 +1,6 @@
 package fr.snake.in.javafx;
 
+import fr.snake.in.javafx.controller.SnakeController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,6 +16,11 @@ public class SnakeApplication extends Application {
         stage.setTitle("Snake");
         stage.setScene(scene);
         stage.show();
+
+        SnakeController snakeController = fxmlLoader.getController();
+        snakeController.setScene(scene);
+        snakeController.spawnFood();
+
     }
 
     public static void main(String[] args) {
