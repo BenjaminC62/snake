@@ -1,7 +1,14 @@
 
-Ã
-java:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(àèİ%8èÔ²Å2J$5d2c3088-73a3-4a47-a7c8-41346b7b82b0
 —
-java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(÷‘éÑ8éÔ²Å2J$2ca4e9ea-c8f4-4350-8548-c227f2ad2bfb
+java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(÷‘éÑ8İŸƒÜƒ2J$b863e167-ceca-4303-a2b3-d12e28c59a6b
+š
+java:S1450"WRemove the "timeline" field and declare it as a local variable in the relevant methods.(›ŸòÃ8ŞŸƒÜƒ2J$badfb7a6-1864-45e9-a763-f355ebc43a3c
+›	java:S131("YComplete cases by adding the missing enum constants or add a default case to this switch.(ï¬º®8çŸƒÜƒ2J$5919f027-0913-43b6-a802-1a83a50c63cb
+
+java:S3252T"EUse static access with "javafx.animation.Animation" for "INDEFINITE".(Êı şÿÿÿÿ8õŸƒÜƒ2J$d8f3cf9e-cf66-420c-9752-7217588ac94f
+g
+java:S1659o"$Declare "pomme2" on a separate line.(”‡¤â8şŸƒÜƒ2J$9069fb19-2f30-40fb-abb5-301aea019ba1
 f
-java:S2119^"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8ôÔ²Å2J$66107fa5-4818-450f-9184-8c77c589985b
+java:S2119n"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8 ƒÜƒ2J$fabc840e-0ffc-4f6c-be01-904f922c94b9
+z
+java:S1128"7Remove this unused import 'javafx.scene.input.KeyCode'.(ûÊ¢¶8‡ ƒÜƒ2J$fd0b61c1-e238-4785-81cd-e9db4ace5b70
